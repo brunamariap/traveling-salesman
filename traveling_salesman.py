@@ -23,7 +23,7 @@ def traveling_salesman(graph):
     for permutation in itertools.permutations(vertices):
         if permutation[0] != 1:
             continue
-        # print(permutation )
+        # print(permutation)
         distance = calculate_distance(permutation, graph)
         if distance < smallest_distance:
             smallest_distance = distance
